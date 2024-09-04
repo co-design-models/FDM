@@ -1,4 +1,4 @@
-interface mcdp {
+mcdp {
     provides part_length     [mm] "Length of the part to be produced. (assume cubical for simplicity)"
 
     provides part_resolution [1/mm] "(Inverse) resolution of the part to be produced. Higher is better."
@@ -10,4 +10,6 @@ interface mcdp {
     requires mass [g]                  "Total mass of the extruder"
     requires budget_per_part [$]       "Total cost of the extruder"
     requires initial_investment [$]    "Cost of the equipement"
+
+    ignore unconnected
 }

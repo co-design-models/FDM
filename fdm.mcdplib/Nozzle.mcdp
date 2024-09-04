@@ -1,8 +1,9 @@
-template mcdp {
+mcdp {
     ''' Interface for the nozzle. '''
     provides part_resolution [1/mm] "Part resolution"
-    requires time_per_unit_volume [s/mm³] 
+    requires time_per_unit_volume [s/mm³]
     requires force [N]  "Force to push out the material"
-    requires mass [kg]  "Mass of the nozzle" 
+    requires mass [kg]  "Mass of the nozzle"
     requires budget [$] "Cost of the nozzle"
-} 
+    ignore unconnected
+}

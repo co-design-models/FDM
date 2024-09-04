@@ -1,4 +1,4 @@
-template mcdp {
+mcdp {
     requires budget [$]
     requires mass [kg]
     requires electric_power [W]
@@ -6,4 +6,5 @@ template mcdp {
     #requires force [N]
     #provides force [N]
     provides temperature [C]
-} 
+    ignore unconnected
+}

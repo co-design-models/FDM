@@ -1,7 +1,8 @@
-template mcdp {
+mcdp {
     provides torque [N*m]
     provides velocity [rad/s]
-    requires electric_power [W] 
+    requires electric_power [W]
     requires mass [g]
     requires budget [USD]
+    ignore unconnected
 }

@@ -1,11 +1,11 @@
-template mcdp {
+mcdp {
     # This is the force exerted on the filament
     provides force [N]
     provides velocity [m/s]
-        
+
     requires torque [N*m]
     requires velocity [rad/s]
     requires mass [g]
     requires budget [USD]
+    ignore unconnected
 }
-    

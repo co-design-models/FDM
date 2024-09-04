@@ -1,3 +1,5 @@
-template mcdp { 
-    implements `PartProducerInterface     
+mcdp {
+    implements `PartProducerInterface
+
+    ignore unconnected
 }
