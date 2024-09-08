@@ -1,4 +1,4 @@
-mcdp {
+interface {
     ''' This models an X, Y joint '''
     provides workspace [m]         'Dimension of workspace (assuming X=Y for simplicity)'
     provides payload_mass [g]      'Weight of payload to be moved around'
@@ -11,5 +11,4 @@ mcdp {
     requires electric_power [W]
     requires mass [g]
     requires budget [$]
-    ignore unconnected
 }
